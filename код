@@ -1,0 +1,23 @@
+# Это простая программа-пример для моего первого репозитория на GitHub
+
+def calculate_sum(a, b):
+    """Функция возвращает сумму двух чисел."""
+    return a + b
+
+def greet_user(name):
+    """Функция возвращает приветствие для пользователя."""
+    return f"Привет, {name}! Добро пожаловать в мой GitHub проект."
+
+if __name__ == "__main__":
+    # Запрашиваем имя у пользователя
+    user_name = input("Как тебя зовут? ")
+    print(greet_user(user_name))
+
+    # Пример работы с числами
+    try:
+        num1 = float(input("Введите первое число: "))
+        num2 = float(input("Введите второе число: "))
+        result = calculate_sum(num1, num2)
+        print(f"Сумма чисел {num1} и {num2} равна {result}")
+    except ValueError:
+        print("Ошибка: Пожалуйста, вводите только числа.")
